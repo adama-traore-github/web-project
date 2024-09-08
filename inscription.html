@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="inscription.css">
+    
+    <h1>BIENVENUE SUR LE FORMULAIRE D'INSCRIPTION</h1>
+</head>
+<body>
+   <form name="inscription" action="inscription.html" method="post" onSubmit="return verification()">
+    
+        <!-- les références -->
+        
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" size="50" required> <br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" size="50" required> <br>
+
+        <label for="age">Âge :</label>
+        <input type="number" name="age" required> <br>
+
+        <!-- Section "Sexe" -->
+        <div class="genre">
+            <p>Sexe :</p>
+            <label for="femme">F</label>
+            <input type="radio" name="sexe" id="femme"  value="F" required>
+            <label for="homme">M</label>
+            <input type="radio" name="sexe" id="homme"  value="M" required>
+        </div>
+
+        <br>
+
+        <!-- Section "Niveau d'étude" -->
+        <div class="Niveau">
+            <label >Niveau d'étude :</label>
+            <ul>
+                <li>
+                    <input type="checkbox" id="primaire" >
+                    <label for="primaire">Primaire</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="secondaire" checked>
+                    <label for="secondaire">Secondaire</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="universite" >
+                    <label for="universite">Université</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="autre" >
+                    <label for="autre">Autre</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section Vidéo et Musique -->
+        <div class="forme">
+            <label class="media-label">Musique :</label>
+            <audio class="media" controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <label class="media-label">Vidéo :</label>
+            <video class="media"  height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Section "Couleur préférée" -->
+        <div class="section-couleur">
+            <label >Couleur Préférée :</label>
+            <div class="option-couleur">
+                <label>
+                    <input type="checkbox" name="couleur" value="jaune">
+                    Jaune
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="rouge">
+                    Rouge
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="bleu">
+                    Bleu
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="vert">
+                    Vert
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="violet">
+                    Violet
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="rose">
+                    Rose
+                </label>
+                <label>
+                    <input type="checkbox" name="couleur" value="orange">
+                    Orange
+                </label>
+            </div>
+        </div>
+
+        <label for="date">DATE:</label>
+        <input type="date">
+        
+        <br>
+        <!-- Section "Pièce jointe" -->
+        <div class="pièce-jointe">
+            <label class="pièce-jointe-forme">Veuillez choisir une pièce jointe :</label>
+            <input type="file" name="pieceJointe">
+        </div>
+
+        <label for="adresseMail">Adresse e-mail :</label>
+        <input type="email" name="adresseMail" required>
+        
+        <br>
+    
+        <label for="matricule">Numéro matricule :</label>
+        <input type="text" name="matricule" required><br>
+
+        <!-- Section "Modules de formation" -->
+        <div class="section-modules">
+            <label class="section-modules-fome">Choisissez 2 modules de formation :</label>
+            <input type="checkbox" name="modules" value="ProgrammationWeb1">Programmation web 1<br>
+            <input type="checkbox" name="modules" value="Bureautique">Bureautique<br>
+            <input type="checkbox" name="modules" value="SEetReseauxInfo">SE et réseau info<br>
+            <input type="checkbox" name="modules" value="Geomatique">Géomatique<br>
+        </div>
+        
+      </div>
+      
+
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+        <br>
+        <button type="reset">Effacer</button>
+    </form>
+    <script src="verification.js"></script>
+</body>
+</html>

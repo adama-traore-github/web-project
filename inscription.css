@@ -1,0 +1,182 @@
+/* Style de base */
+body {
+    background-color: #FFCCFF ;
+    font-family: Arial, sans-serif;
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #041e30;
+    margin-top: 20px;
+    animation: slide-in 1s ease-in-out;
+}
+
+/* Animation d'entrée */
+@keyframes slide-in {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Style de base pour le formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eaeaff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+/* Styles pour les étiquettes des champs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour les champs de saisie */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Styles pour les boutons */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour la section "Vidéo et Musique" */
+.forme {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le libellé "Vidéo" et "Musique" */
+.media-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Styles pour la vidéo et l'audio */
+.media {
+    width: 100%;
+}
+
+
+
+/* Style pour le libellé "Choisissez 2 modules de formation" */
+.section-modules-fome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style pour la liste de sélection des modules */
+select[name="modulesFormation"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 80px;
+}
+
+/* Style pour la section "Pièce jointe" */
+.pièce-jointe {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le libellé "Veuillez choisir une pièce jointe" */
+.pièce-jointe-forme {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style pour le champ de pièce jointe */
+input[type="file"] {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour la section "Sexe" */
+.genre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+/* Style pour la section "Niveau d'étude" */
+.Niveau {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Style pour la section "Couleur préférée" */
+.section-couleur {
+    background-color: #f9f9f9;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Style pour les options de couleur */
+.option-couleur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Style pour le bouton "Effacer" */
+button[type="reset"] {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
